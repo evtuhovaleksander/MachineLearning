@@ -23,4 +23,4 @@ def tokenize_me(file_text):
 
     return tokens
 
-print(tokenize_me('шлв саша по шоссе и сосала суп'))
+print(tokenize_me('шла саша по шоссе и сосала суп'))

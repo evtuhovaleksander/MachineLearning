@@ -29,4 +29,4 @@ for line in data.splitlines():
             if word.tag.POS not in ("NUMR", "PREP", "CONJ", "PRCL", "INTJ"):
                 result.add(word.normal_form)
 
-print(", ".join(result))
+print(result)
