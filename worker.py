@@ -27,7 +27,7 @@ for user_id in user_grops_mas_dict:
         summary_info+=' '+info_string
         print(info_string)
 
-file = open('testfile.txt', 'w')
+file = open('testfile5.txt', 'w')
 file.write(summary_info)
 file.close()
 
@@ -35,13 +35,18 @@ file.close()
 
 
 
-my_phrases = ["мир русский новость путин ссср russian ",
-              "бизнес",
-              "юмор анекдоты смех"]
+my_phrases = []
 
-
+dict={'клубы': 'клуб club fans', 'новости': 'интернет россия новости путин ссср', 'юмор': 'юмор смех смеяться прикол анекдот', 'бизнес': 'бизнес работа россия реклама заработок обьявление недвижимость бесплатный продажа продать', 'жизнь': 'жизнь любовь дом здоровье ссср красота стиль', 'путешествия': 'мир россия москва русский world путешествие отдых'}
 
 file = open('testfile4.txt', 'w')
+my_phrases=[]
+file.write(str(dict)+'\n')
+i=0
+for key in dict:
+    my_phrases.append(dict[key])
+    file.write(str(i)+'   '+dict[key]+'\n')
+    i+=1
 
 for user_id in user_info_string:
     phrase = []

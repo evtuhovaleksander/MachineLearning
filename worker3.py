@@ -24,3 +24,11 @@ for tuple in reversed_sorted_freq_tuple:
     print(tuple)
 
 file.close()
+
+file = open('testfile5.txt', 'w')
+
+for name in group_dict:
+    text=(' '+str(name)+' ')*group_dict[name]
+    print(text)
+    file.write(text+'\n')
+file.close()

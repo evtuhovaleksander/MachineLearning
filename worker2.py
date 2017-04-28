@@ -26,7 +26,7 @@ def tokenize_me(file_text):
 
 
 
-file = open('testfile.txt', 'r')
+file = open('testfile5.txt', 'r')
 text=file.read()
 #print(text)
 

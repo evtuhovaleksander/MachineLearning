@@ -21,8 +21,15 @@ for item in items:
     birthday = item['birthday']
     job = item['job']
     raw_groups = item['groups']
-
     try:
+        if birthday!='null':
+            birthday=birthday.split()[2]
+        else:
+            birthday=0
+    except Exception as e:
+        birthday=0
+    try:
+
         user_tuple = FacebookUser.get_or_create(id=id, url=url, name=name, job=job, birthday=birthday)
         user = user_tuple[0]
         users.append(user)

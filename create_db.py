@@ -1,5 +1,5 @@
 import models
-
+import datetime
 
 def drop_tables():
     models.FacebookUser.drop_table()
@@ -21,3 +21,7 @@ def recreate_db():
 
 
 recreate_db()
+#models.FacebookUser.drop_table()
+#models.FacebookUser.create_table()
+
+#f=models.FacebookUser().get_or_create(id=1, url='url', name='name', job='job', birthday=datetime.datetime.now())
